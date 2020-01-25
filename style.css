@@ -1,0 +1,18 @@
+html{
+    background: linear-gradient(to bottom right, #0652C5, #D4418E);
+    height: 750px;
+    font-size: 30px;
+
+}
+
+form p{
+    font-size: 40px;
+}
+button{
+    width: 25%;
+    height: 60px;
+    float: right;
+    font-size: 30px;
+    border-radius: 20px;
+    
+}
