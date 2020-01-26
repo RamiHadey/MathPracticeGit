@@ -5,7 +5,7 @@ var doc4 = document.getElementById("fourth");
 var doc5 = document.getElementById("fifth");
 var doc6 = document.getElementById("sixth");
 var output = document.getElementById("output");
-
+ 
 function mean(){
     var first = parseFloat(doc1.value); 
     var second = parseFloat(doc2.value); 
@@ -375,9 +375,107 @@ function middle(){
 
     six = first;
 
-    var midde = (three + four) / 2;
-    output.innerHTML = "The two middle terms are " + three + " and " + four + ", so the median is " + midde;
+    var middle = (three + four) / 2;
+    output.innerHTML = "The two middle terms are " + three + " and " + four + ", so the median is " + middle;
     if(output.innerHTML === "The two middle terms are NaN and NaN, so the median is NaN"){
         output.innerHTML = "You did not input in all spaces!"
     }
+}
+
+
+
+
+function Duplicate(){
+    var one = parseFloat(doc1.value); 
+    var two = parseFloat(doc2.value); 
+    var three = parseFloat(doc3.value); 
+    var four = parseFloat(doc4.value); 
+    var five = parseFloat(doc5.value); 
+    var six = parseFloat(doc6.value);
+
+
+    var n1 = 1;
+    var n2 = 1;
+    var n3 = 1;
+    var n4 = 1;
+    var n5 = 1;
+    var n6 = 1;
+
+
+    if (one === two){
+        n1 ++;
+    }
+    if (one === three){
+        n1 ++;
+    }
+    if (one === four){
+        n1 ++;
+    }
+    if (one === five){
+        n1 ++;
+    }
+    if (one === six){
+        n1 ++;
+    }
+
+
+    if (two === three){
+        n2 ++;
+    }
+    if (two === four){
+        n2 ++;
+    }
+    if (two === five){
+        n2 ++;
+    }
+    if (two === six){
+        n2 ++;
+    }
+
+
+
+    if (three === four){
+        n3 ++;
+    }
+    if (three === five){
+        n3 ++;
+    }
+    if (three === six){
+        n3 ++;
+    }
+
+
+    if (four === five){
+        n4 ++;
+    }
+    if (four === six){
+        n4 ++;
+    }
+
+
+    if (five === six){
+        n5 ++;
+    }
+
+    var max = Math.(n1, n2, n3, n4, n5, n6);
+    if(max === n1){
+        output.innerHTML = "mode is " + one + " and it appeared " + max + " number of times"; 
+    }
+    else if(max === n2){
+        output.innerHTML = "mode is " + two + " and it appeared " + max + " number of times"; 
+    }
+    else if(max === n3){
+        output.innerHTML = "mode is " + three + " and it appeared " + max + " number of times"; 
+    }
+    else if(max === n4){
+        output.innerHTML = "mode is " + four + " and it appeared " + max + " number of times"; 
+    }
+    else if(max === n5){
+        output.innerHTML = "mode is " + five + " and it appeared " + max + " number of times"; 
+    }
+    else if(max === n6){
+        output.innerHTML = "mode is " + six + " and it appeared " + max + " number of times"; 
+    }
+
+
 }

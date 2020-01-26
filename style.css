@@ -5,6 +5,10 @@ html{
 
 }
 
+p input{
+    border-radius: 20px;
+}
+
 form p{
     font-size: 40px;
 }
