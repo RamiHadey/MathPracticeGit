@@ -8,7 +8,7 @@ var output = document.getElementById("output");
  
 function mean(){
     var first = parseFloat(doc1.value); 
-    var second = parseFloat(doc2.value); 
+    var second = parseFloat(doc2.value);  
     var third = parseFloat(doc3.value); 
     var fourth = parseFloat(doc4.value); 
     var fifth = parseFloat(doc5.value); 
@@ -457,25 +457,121 @@ function Duplicate(){
         n5 ++;
     }
 
-    var max = Math.(n1, n2, n3, n4, n5, n6);
-    if(max === n1){
-        output.innerHTML = "mode is " + one + " and it appeared " + max + " number of times"; 
+    if (n1 === 1 && n2 ===1 && n3 === 1 && n4 === 1 && n5 === 1 && n6 === 1){
+        output.innerHTML = "There were no duplicates"
     }
-    else if(max === n2){
-        output.innerHTML = "mode is " + two + " and it appeared " + max + " number of times"; 
+    if(n1 !== 1){
+        output.innerHTML = "" + one + " is a duplicate and it appears " + n1 + " times"
     }
-    else if(max === n3){
-        output.innerHTML = "mode is " + three + " and it appeared " + max + " number of times"; 
+    if(n2 !== 1 && two !== one){
+        output.innerHTML = "" + two + " is a duplicate and it appears " + n2 + " times"
     }
-    else if(max === n4){
-        output.innerHTML = "mode is " + four + " and it appeared " + max + " number of times"; 
+    if(n3 !== 1 && three !== one && three !== two){
+        output.innerHTML = "" + three + " is a duplicate and it appears " + n3 + " times"
     }
-    else if(max === n5){
-        output.innerHTML = "mode is " + five + " and it appeared " + max + " number of times"; 
+    if(n4 !== 1 && four !== one && four !== two && four !== three){
+        output.innerHTML = "" + four + " is a duplicate and it appears " + n4 + " times"
     }
-    else if(max === n6){
-        output.innerHTML = "mode is " + six + " and it appeared " + max + " number of times"; 
+    if(n5 !== 1 && five !== one && five !== two && five !== three && five !== four){
+        output.innerHTML = "" + five + " is a duplicate and it appears " + n5 + " times"
+    }
+    if(n6 !== 1 && six !== one && six !== two && six !== three && six !== four && six !== five){
+        output.innerHTML = "" + six + " is a duplicate and it appears " + n6 + " times"
+    }
+}
+
+
+function Unique(){
+    var one = parseFloat(doc1.value); 
+    var two = parseFloat(doc2.value); 
+    var three = parseFloat(doc3.value); 
+    var four = parseFloat(doc4.value); 
+    var five = parseFloat(doc5.value); 
+    var six = parseFloat(doc6.value);
+
+
+    var n1 = 1;
+    var n2 = 1;
+    var n3 = 1;
+    var n4 = 1;
+    var n5 = 1;
+    var n6 = 1;
+
+
+    if (one === two){
+        n1 ++;
+    }
+    if (one === three){
+        n1 ++;
+    }
+    if (one === four){
+        n1 ++;
+    }
+    if (one === five){
+        n1 ++;
+    }
+    if (one === six){
+        n1 ++;
     }
 
 
+    if (two === three){
+        n2 ++;
+    }
+    if (two === four){
+        n2 ++;
+    }
+    if (two === five){
+        n2 ++;
+    }
+    if (two === six){
+        n2 ++;
+    }
+
+
+
+    if (three === four){
+        n3 ++;
+    }
+    if (three === five){
+        n3 ++;
+    }
+    if (three === six){
+        n3 ++;
+    }
+
+
+    if (four === five){
+        n4 ++;
+    }
+    if (four === six){
+        n4 ++;
+    }
+
+
+    if (five === six){
+        n5 ++;
+    }
+
+    if (n1 === 1 && n2 ===1 && n3 === 1 && n4 === 1 && n5 === 1 && n6 === 1){
+        output.innerHTML = "The uniques are " + one + two + three + four + five + six;
+    }
+    // if(n1 !== 1){
+    //     output.innerHTML = ""  " is a duplicate and it appears " + n1 + " times"
+    // }
+    // if(n2 !== 1 && two !== one){
+    //     output.innerHTML = "" + two + " is a duplicate and it appears " + n2 + " times"
+    // }
+    // if(n3 !== 1 && three !== one && three !== two){
+    //     output.innerHTML = "" + three + " is a duplicate and it appears " + n3 + " times"
+    // }
+    // if(n4 !== 1 && four !== one && four !== two && four !== three){
+    //     output.innerHTML = "" + four + " is a duplicate and it appears " + n4 + " times"
+    // }
+    // if(n5 !== 1 && five !== one && five !== two && five !== three && five !== four){
+    //     output.innerHTML = "" + five + " is a duplicate and it appears " + n5 + " times"
+    // }
+    // if(n6 !== 1 && six !== one && six !== two && six !== three && six !== four && six !== five){
+    //     output.innerHTML = "" + six + " is a duplicate and it appears " + n6 + " times"
+    // }
 }

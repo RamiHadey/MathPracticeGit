@@ -10,7 +10,9 @@ p input{
 }
 
 form p{
+    width: 50%;
     font-size: 40px;
+    float: left;
 }
 button{
     width: 25%;
